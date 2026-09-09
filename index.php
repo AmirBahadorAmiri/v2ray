@@ -28,7 +28,8 @@ function parseConfigInfo($config)
     ];
 }
 
-$subUrl = "https://raw.githubusercontent.com/AmirBahadorAmiri/v2raysub/refs/heads/main/sub.txt";
+//$subUrl = "https://raw.githubusercontent.com/AmirBahadorAmiri/v2raysub/refs/heads/main/sub.txt";
+$subUrl = "./sub.txt";
 $configs = [];
 
 $content = @file_get_contents($subUrl);
@@ -52,7 +53,7 @@ if ($content !== false) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>کانفیگ‌های V2Ray</title>
+    <title>کانفیگ‌های V2ray</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
